@@ -1,0 +1,74 @@
+{
+  "name": "pindhood-agency",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Modern agency landing page for Pindhood Media - Stories Rooted in Soil, Told with Soul",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "vite",
+    "server": "nodemon backend/server.js",
+    "build": "vite build",
+    "vercel-build": "npm run build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start": "node backend/server.js",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "concurrently": "^9.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "framer-motion": "^12.1.1",
+    "gsap": "^3.12.8",
+    "mongoose": "^8.9.4",
+    "nodemon": "^3.1.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.55.0",
+    "react-icons": "^5.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.13.0",
+    "vite": "^6.0.5"
+  },
+  "author": {
+    "name": "Pindhood Media",
+    "email": "hello@pindhoodmedia.com",
+    "url": "https://pindhoodmedia.com"
+  },
+  "keywords": [
+    "agency",
+    "media",
+    "production",
+    "storytelling",
+    "film",
+    "video",
+    "documentary",
+    "react",
+    "vite",
+    "mern",
+    "mongodb",
+    "express",
+    "nodejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pindhoodmedia/agency-website.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

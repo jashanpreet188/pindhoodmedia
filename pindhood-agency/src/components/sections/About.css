@@ -1,0 +1,160 @@
+.about {
+  background: var(--black);
+  color: var(--white);
+  min-height: 100vh;
+  padding: var(--section-padding);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 60px;
+}
+
+.about-header h2 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  color: var(--white);
+}
+
+.contact-email {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.about-content {
+  margin-bottom: 100px;
+}
+
+.about-story {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-story p {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  line-height: 1.6;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  letter-spacing: 0.01em;
+}
+
+.about-story p:last-child {
+  margin-bottom: 0;
+  font-style: italic;
+  color: var(--white);
+}
+
+.about-locations {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 80px;
+  text-align: center;
+}
+
+.about-locations h3 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 300;
+  margin-bottom: 60px;
+  color: var(--white);
+  letter-spacing: -0.01em;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.location-item {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition-smooth);
+}
+
+.location-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.location-name {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.location-time {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 0;
+  }
+  
+  .about-header {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+  }
+  
+  .about-content {
+    margin-bottom: 80px;
+  }
+  
+  .about-story p {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-locations {
+    padding-top: 60px;
+  }
+  
+  .locations-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .location-item {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 60px 0;
+  }
+  
+  .about-header {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+  }
+  
+  .about-content {
+    margin-bottom: 60px;
+  }
+  
+  .about-locations {
+    padding-top: 40px;
+  }
+} 

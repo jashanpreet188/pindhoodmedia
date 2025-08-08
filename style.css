@@ -1,0 +1,181 @@
+/* Custom h2 and h4 styles */
+h2, h4 {
+  color: black;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+h4 {
+  font-size: 1.8vw;
+}
+
+/* About section styling */
+#about {
+  padding: 3vw 5vw 2vw 5vw;
+  text-align: left;
+  color: black;
+}
+
+#about h2 {
+  margin-bottom: 1vw;
+}
+
+#about h4 {
+  line-height: 1.6;
+}
+
+@font-face {
+  font-family: "suisselntl-regular";
+  src: url("./SuisseIntl-Light.ttf") format("truetype"),
+       url("./SuisseIntl-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "suisselntl-regular";
+  color: rgb(255, 255, 255);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(136, 136, 136);
+  position: relative;
+  overflow: hidden;
+}
+
+#cursor {
+  height: 7.5vw;
+  width: 7.5vw;
+  background-color: rgba(208, 14, 14, 0.796);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cursor h5 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: white;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#page1-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  padding: 3vw 3vw;
+}
+
+nav h3,
+nav h4 {
+  font-size: 1.4vw;
+  font-weight: 100;
+  color: white;
+}
+
+#page1-content h1 {
+  font-family: "suisselntl-regular";
+  font-size: 7vw;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: -0.03em;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  white-space: pre-line;
+}
+
+#page1-content h1 span {
+  display: inline-block;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  padding: 3vw;
+}
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(174, 204, 149);
+  position: relative;
+  padding: 3vw;
+}
+
+#page3-top {
+  background-color: rgba(255, 0, 0, 0);
+  text-align: center;
+}
+
+#page3-top h4 {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+#page3-top h4 span {
+  color: white;
+  font-weight: 600;
+  font-size: 0.7vw;
+  background-color: black;
+  color: white;
+}
+
+#page3-top h3 {
+  font-size: 10vw;
+  font-weight: 600;
+}
