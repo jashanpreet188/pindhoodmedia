@@ -22,11 +22,22 @@
       "dest": "/backend/server.js"
     },
     {
-      "src": "^/assets/(.*)",
+      "handle": "filesystem"
+    },
+    {
+      "src": "/assets/(.*)",
       "dest": "/assets/$1"
     },
     {
-      "src": "^/(?!api)(.*)",
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*\\.(ico|png|jpg|jpeg|mp4|webp|svg|ttf|woff2)$)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/index.html"
     }
   ],
